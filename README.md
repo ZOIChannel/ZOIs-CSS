@@ -1,6 +1,6 @@
 # ZOI's CSS
 
-これはZOIがBootstrapを使っていて不便だと感じて使い始めたものです。
+これはZOIがBootstrapを使っていて不便だと感じて作ったものです。
 
 感想などがありましたらTwitterの@ZOI25125846までDMください。
 
