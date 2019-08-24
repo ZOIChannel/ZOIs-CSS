@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- ZOI'sCSS読み込み -->
-    <link rel="stylesheet" href="https://zoichannel.github.io/ZOIs-CSS/ZOIs-CSS.css">
+    <link rel="stylesheet" href="https://github.com/ZOIChannel/ZOIs-CSS/releases/download/v0.0.1/ZOIs-CSS_0.0.1.css">
 
     <title>タイトル</title>
   </head>
