@@ -1,0 +1,50 @@
+/*-------
+---------
+ZOI's CSS
+---------
+-------*/
+
+
+
+
+/*--------
+Breadcrumb
+--------*/
+.breadcrumb{
+  width: calc(100% - 4rem);
+  height: 1.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  font-size: 16px;
+  background-color: #bfbfbf;
+  border-radius: 10px;
+}
+
+/*----
+Button
+----*/
+
+/*--
+Card
+--*/
+
+/*------
+Carousel
+------*/
+
+/*------
+Dropdown
+------*/
+
+/*-------
+Jumbotron
+-------*/
+
+/*----
+Navbar
+----*/
+
+/*------
+Progress
+------*/
