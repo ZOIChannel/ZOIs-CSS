@@ -4,6 +4,11 @@ ZOI's CSS
 ---------
 -------*/
 
+body {
+    margin: 0;
+}
+
+
 /*------
 HTML_tag
 ------*/
@@ -110,6 +115,7 @@ Card
 .card-image {
     width: 100%;
     height: 180px;
+    background-size: cover;
     border-top-left-radius: 7.5px;
     border-top-right-radius: 7.5px;
 }
@@ -158,6 +164,7 @@ LongCard
 .longcard-image {
     width: 200px;
     height: 200px;
+    background-size: cover;
     border-top-left-radius: 7.5px;
     border-bottom-left-radius: 7.5px;
 }
@@ -190,6 +197,23 @@ Carousel
 Dropdown
 ------*/
 
+.dropdown {
+    visibility: visible;
+}
+
+.dropdown-item {
+    text-align: center;
+    visibility: hidden;
+}
+
+.dropdown-items {
+    visibility: hidden;
+}
+
+.dropdown-items:hover {
+    visibility: initial;
+}
+
 
 /*-------
 Jumbotron
@@ -200,38 +224,6 @@ Jumbotron
 header
 ----*/
 
-.header {
-    width: 100%;
-    height: 3rem;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    color: #808080;
-    font-size: 16px;
-    background-color: #eaeaea;
-    border-radius: 10px;
-}
-
-.breadcrumb-items {
-    width: 100%;
-    height: 1.5rem;
-    display: flex;
-    padding: 0;
-    margin: auto 0;
-}
-
-.breadcrumb-item::before {
-    padding-right: 0.5rem;
-    content: "/";
-}
-
-.breadcrumb-item {
-    margin: 0 0.5rem;
-}
-
-.breadcrumb-item-first {
-    margin: 0 0.5rem;
-}
-
 
 /*----
 footer
@@ -241,3 +233,194 @@ footer
 /*------
 Progress
 ------*/
+
+
+/*--------
+console(12)
+--------*/
+
+.console_elia {
+    background: #000000;
+}
+
+.console {
+    display: flex;
+    justify-content: center;
+}
+
+.console p {
+    color: #ffffff;
+    font-size: 64px;
+    font-family: monospace;
+    letter-spacing: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 40px solid;
+    margin: 10px auto 10px auto;
+}
+
+.console .console_text {
+    width: 0;
+    animation: type 1.6s steps(12, end) 1000ms forwards;
+}
+
+@keyframes type {
+    to {
+        width: 520px;
+    }
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/****-----menuからheader-----***/
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    margin: 0;
+    background: #e8e8e8;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header>li {
+    width: 10rem;
+    height: 4rem;
+    line-height: 4rem;
+    background: #eaeaea;
+}
+
+.header>li a {
+    display: block;
+    color: #000000;
+}
+
+.header>li a:hover {
+    color: #999999;
+}
+
+.header__item {
+    float: right;
+    padding-left: 1rem;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+
+ul.header__level2 {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.header>li:hover {
+    background: #eaeaea;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.header__level2 li {
+    border-top: 1px solid #cccccc;
+}
+
+.header__third-level li {
+    border-top: 1px solid #cccccc;
+}
+
+.header__level2 li a:hover {
+    background: #eaeaea;
+}
+
+.header__img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    background-size: cover;
+}
+
+.header__img a {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+}
+
+
+/* 下矢印 */
+
+.init-bottom:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 2.5px 15px;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* floatクリア */
+
+.header:before,
+.header:after {
+    content: " ";
+    display: table;
+}
+
+.header:after {
+    clear: both;
+}
+
+.header>li.header__item {
+    position: relative;
+}
+
+li.header__item ul.header__level2 {
+    position: absolute;
+    top: 40px;
+    width: 10rem;
+    background: #eaeaea;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    padding-left: 1rem;
+}
+
+li.header__item:hover ul.header__level2 {
+    top: 4rem;
+    visibility: visible;
+    opacity: 1;
+}
